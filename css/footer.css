@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*Pie de pagina*/
+
+.piedepagina{
+    padding-top: 50px;
+    width: 100%;
+    
+}
+.piedepagina .contenedor{
+    padding: 10px 20px;
+    background-color: #0a141d;
+}
+.piedepagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+
+}
+
+.piedepagina .grupo1 .box h2{
+    font-size: 1.125rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.piedepagina .grupo1 .box .linea{
+    margin-bottom: 20px;
+
+}
+.piedepagina .grupo1 .box .linea hr{
+    color: #0CB7F2;
+    width: 50%;
+}
+.piedepagina .grupo1 .box p{
+    color: #efefef;
+    margin-bottom: 0.938rem;
+
+}
+.piedepagina .grupo1 .box .text{
+    color: #efefef;
+    margin-bottom: 0.938rem;
+    
+
+}
+
+.piedepagina .grupo1 .box .fas{
+    color: #efefef;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #0d2033;
+}
+.piedepagina .grupo1 .box .fas:hover{
+    background-color: #0CB7F2;
+    cursor: pointer;
+}
+
+.piedepagina .grupo1 .box .redsocial a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+
+}
+
+.piedepagina .grupo1 .box .redsocial .fa:hover{
+    color: brown;
+    background-color: #0CB7F2;
+}
+.piedepagina .grupo2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+
+
+}
+.piedepagina .grupo2 small{
+    font-size: 15px;
+}
+
+
+
+@media screen and (max-width:48em) {
+    .piedepagina .grupo1{
+        margin-top: 15px;
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1.875rem;
+        padding: 2.188rem;
+
+  }
+  
+}
+

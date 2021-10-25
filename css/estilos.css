@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: #fff;
+}
+/*---------Container-----------------------*/
+.container{
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 60px;
+  overflow: hidden;
+}
+/*---------Fin-Container-----------------------*/
+/*-------------index--------------------*/
+
+/*----------index-card*/
+.background1-left-column{
+	background: linear-gradient(180deg,#0CB7F2,#1c82a1);
+}
+
+
+.tarjeta__container{
+    display: flex;
+	justify-content: center;
+	height: 100vh;
+    align-items: center;
+}
+
+.tarjeta {
+	background-color:  #f8f4ee;
+	border-radius: 1rem;
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+	display: flex;	
+	margin: 1.5rem;
+	overflow: hidden;
+	width: 30rem;
+	height: 19rem;
+}
+.right-column img{
+    padding: 10px;
+    padding-top:20px;
+    padding-left: 30px;
+    width: 300px;
+    height: 300px;
+}
+.left-column {	
+	color: #fff;
+	padding: 2rem;
+	max-width: 10rem;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+
+}
+
+.img__paquete{
+    width: 250px;
+    height: 250px;
+}
+
+
+/*----------fin-index-card------*/
+.main__seccion{
+    margin-top: 45px;
+    display: flex;
+    height: calc(100vh - 70px);
+    background-image: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%), url(../img/camionEmpresa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center;
+    align-items: center;
+    color: #fff;
+
+}
+
+.main__seccion .main__textos{
+    width: 80%;
+    margin-bottom: 50px;
+    margin-left: 70px;
+}
+.main__seccion .main__textos .titulo{
+    font-size: 3.2rem;
+
+}
+.main__seccion .main__textos .subtitulo{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 15px 0;
+}
+.main__seccion .main__textos .btn{
+    display: inline-block;
+    background: #fff;
+    padding: 20px 40px;
+    color: #667e3a;
+    text-decoration: none;
+    border-radius: 40px;
+}
+.main__seccion .main__textos .btn:hover{
+    color: #fff;
+    background-color: #0CB7F2;
+
+}
+/*------------Fin-index--------------------*/
+
+/*-------Servicios--------------*/
+.lista{
+    margin-top: 10px;
+    width: 50%;
+    min-width: 30%;
+    height: 120px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+  .lista__img{
+      width: 150px;
+      height: 150px;
+  }
+  .lista__parrafo{
+    text-align: center;
+  }
+  
+  .miselaneas{
+      min-height: 400px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 80px;
+      justify-items: center;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  .tiempo__fig{
+      text-align:justify;
+  }
+  .miselaneas__img{
+      max-width: 80%;
+  }
+  .miselaneas__parrafos{
+      margin-bottom: 20px;
+      line-height: 1.5;
+      font-weight: 300;
+  }
+
+
+/*-------fin-Servicios---------------------*/
+
+/*--------Ubicacion------------------------*/
+.mapa{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .mapa_div{
+    text-align: center;
+  }
+  .mapa__parrafos{
+    margin-bottom: 120px;
+  
+  }
+
+/*----------fin-ubicacion------------------*/
+
+/*-----------Contacto-------------------------*/
+
+
+/*-----------Fin-Contacto---------------------*/
+
+/*media queries*/
+
+@media (max-width: 1030px) {
+	.tarjeta__container{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height:auto;
+	}
+    .tarjeta{
+        width: 25rem;
+	    height: 19rem;
+    }
+    .right-column img{
+        padding: 10px;
+        padding-top:20px;
+        width: 230px;
+        height: 300px;
+    }
+    .mapa{
+        min-height: 400px;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        justify-items: center;
+        align-items: center;
+        
+      }
+    .mapa__div iframe{
+        width: 400px;
+        height: 400px;
+    }
+    .mapa__parrafos{
+        margin-bottom: 1px;
+      
+    }
+    
+}
